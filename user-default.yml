@@ -21,9 +21,9 @@ springdoc:
 management:
   security:
     enabled: false
+  context-path: /actuator
   endpoints:
     web:
-      base-path: /
       exposure:
         include: '*'
 server:
