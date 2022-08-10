@@ -23,7 +23,7 @@ management:
     enabled: false
   endpoints:
     web:
-      base-path: /actuator
+      base-path: /manage
       exposure:
         include: '*'
 
