@@ -12,7 +12,7 @@ spring:
   cloud:
     consul:
       discovery:
-        healthCheckPath: ${management.server.servlet.context-path}/actuator/health
+        #healthCheckPath: ${management.server.servlet.context-path}/actuator/health
         healthCheckInterval: 15s
 springdoc:
   swagger-ui:
