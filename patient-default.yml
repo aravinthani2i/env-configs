@@ -23,6 +23,7 @@ management:
     enabled: false
   endpoints:
     web:
+      base-path: /
       exposure:
         include: '*'
 server:
