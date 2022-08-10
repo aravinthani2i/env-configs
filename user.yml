@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: ${management.server.servlet.context-path}/actuator/health
+        healthCheckInterval: 15s
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  servlet:
+    context-path: /api/v1

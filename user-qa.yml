@@ -14,6 +14,11 @@ spring:
   redis:
     host: localhost
     port: 6379
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: ${management.server.servlet.context-path}/actuator/health
+        healthCheckInterval: 15s
 logging:
   level:
     org:
