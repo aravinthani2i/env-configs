@@ -21,11 +21,12 @@ springdoc:
 management:
   security:
     enabled: false
-  context-path: /actuator
   endpoints:
     web:
+      base-path: /actuator
       exposure:
         include: '*'
+
 server:
   servlet:
     context-path: /api/v1
