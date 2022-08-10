@@ -1,3 +1,8 @@
+server:
+  servlet:
+    context-path: /api/v1
+  port: 9090
+
 spring:
   cache:
     type: redis
@@ -26,8 +31,3 @@ management:
       base-path: /manage
       exposure:
         include: '*'
-
-server:
-  servlet:
-    context-path: /api/v1
-  port: 9090
