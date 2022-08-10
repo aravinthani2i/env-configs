@@ -4,29 +4,3 @@ spring:
     url: jdbc:mysql://localhost:3306/users
     username: root
     password: root
-  cache:
-    type: redis
-  jpa:
-    show-sql: true
-    databasePlatform: org.hibernate.dialect.MySQL5InnoDBDialect
-    hibernate:
-      ddl-auto: update
-  redis:
-    host: localhost
-    port: 6379
-
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-
-management:
-  security:
-    enabled: false
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-server:
-  servlet:
-    context-path: /api/v1
-  port: 9090

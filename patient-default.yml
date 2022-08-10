@@ -1,4 +1,14 @@
 spring:
+  cache:
+    type: redis
+  jpa:
+    show-sql: true
+    databasePlatform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+  redis:
+    host: localhost
+    port: 6379
   cloud:
     consul:
       discovery:
@@ -18,3 +28,4 @@ management:
 server:
   servlet:
     context-path: /api/v1
+  port: 9090
