@@ -1,3 +1,7 @@
+server:
+  servlet:
+    context-path: /api/v1
+
 spring:
   cache:
     type: redis
@@ -12,7 +16,7 @@ spring:
   cloud:
     consul:
       discovery:
-        #healthCheckPath: ${management.server.servlet.context-path}/actuator/health
+        healthCheckPath: ${server.servlet.context-path}/actuator/health
         healthCheckInterval: 15s
 springdoc:
   swagger-ui:
@@ -23,10 +27,5 @@ management:
     enabled: false
   endpoints:
     web:
-      base-path: /manage
       exposure:
         include: '*'
-
-server:
-  servlet:
-    context-path: /api/v1
