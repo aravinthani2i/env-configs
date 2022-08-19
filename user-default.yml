@@ -15,6 +15,7 @@ spring:
     port: 6379
   cloud:
     consul:
+      host: host.docker.internal
       discovery:
         healthCheckPath: ${server.servlet.context-path}/actuator/health
         healthCheckInterval: 15s
