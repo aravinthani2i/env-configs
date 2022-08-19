@@ -1,9 +1,9 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/users
+    url: jdbc:mysql://192.168.23.130:3306/users
     username: ${username}
     password: ${password}
   redis:
-    host: localhost
+    host: 192.168.23.130
     port: 6379
