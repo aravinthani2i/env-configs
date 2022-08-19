@@ -5,8 +5,8 @@ spring:
     username: ${username}
     password: ${password}
   redis:
-    host: 192.168.23.130
+    host: localhost
     port: 6379
   cloud:
     consul:
-      host: 192.168.23.130
+      host: localhost
