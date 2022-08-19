@@ -17,6 +17,7 @@ spring:
     consul:
       host: host.docker.internal
       discovery:
+        ipAddress: host.docker.internal
         preferIpAddress: true
         healthCheckPath: ${server.servlet.context-path}/actuator/health
         healthCheckInterval: 15s
